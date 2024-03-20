@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app="my app"
+<head>
+    <title> ajs</title>
+    <script>
+    src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    </head>
+    <body bgcolor="black" text="white">
+        <h1><marquee>pg 1</marquee></h1>
+        <center> <h2> svce</h2>
+            <h3>dept of ise</h3>
+            <h4>ajs code to display names</h4>
+            </center><hr>
+            <div ng-controller = "myctrl">
+                <h> welcome</h>
+                <p>dynamic content</p>
+<p>enter your first name ;<input type="text" ng-model= "fname"></p>
+<p>enter your second name ;<input type="text" ng-model= "lname"></p>
+<p>hello ,{{fname}} {{lname}} </p>
+          </div>
+          <script>angular.module('myapp', [])
+          .controller ('myctrl', function($scope){
+            $scope.fname = "user";
+            $scope.lname = "user";
+          });
+        </script>
+    </body>
+</html>
